@@ -1,3 +1,15 @@
 .heading{
 	display: inline;
 }
+body {
+	background: #57302f;
+}
+a {
+	color:#009664;
+}
+footer{
+	color:#ecbebe;
+}
+.heading, .main{
+	color:#F5821F;
+}
