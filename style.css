@@ -5,11 +5,19 @@ body {
 	background: #57302f;
 }
 a {
-	color:#009664;
+	color:#04b87c;
 }
 footer{
 	color:#ecbebe;
 }
 .heading, .main{
 	color:#F5821F;
+}
+td{
+	border-style: solid;
+	border-width:2px;
+	border-color:#ECBEBE;
+}
+li{
+	color:#ECBEBE;
 }
