@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .heading{
 	display: inline;
+	font-family: 'Bebas Neue', cursive;
 }
 body {
-	background: #57302f;
+	background: #4d2c2b;
 }
 a {
 	color:#04b87c;
@@ -20,4 +24,10 @@ td{
 }
 li{
 	color:#ECBEBE;
+	font-family: 'Bebas Neue', cursive;
+}
+
+p, a{
+	font-family: 'Stick No Bills', sans-serif;
+	font-size: 20px;
 }
