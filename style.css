@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-
-.topnav{
+.topnav {
 	overflow: hidden;
 	padding: 0px;
 	background-color: #3a3434;
@@ -52,7 +51,7 @@ td{
 
 li{
 	color:#ECBEBE;
-	font-family: 'Bebas Neue', cursive;
+	font-family: 'Bebas Neue', 'cursive';
 }
 
 p {
