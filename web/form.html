@@ -17,7 +17,12 @@
         <div class="main">
             <p>Fill out this form to contact me!</p>
             <div class="form">
-                <form id="contactMe">
+                <script>
+                    function formSubmit() {
+                        alert("Your message was sent succesfully!")
+                    }
+                </script>
+                <form id="contactMe" name="contactMe" onsubmit="formSubmit()">
                     <label for="name">Name:</label>
                     <input type="name" id="name"> 
                     <br>
@@ -27,6 +32,7 @@
                     <label for="message">Message:</label>
                     <input type="text" id="message">
                     <br>
+                    <input type="submit" id="submit">
                 </form>
             </div>
         </div>
