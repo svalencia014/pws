@@ -7,12 +7,11 @@ function formSubmit() {
         alert("Please fill all the fields");
     } else {
         let http = new XMLHttpRequest();
-        http.open('POST', 'http://172.24.123.61:9000/messages', true);
         let params = new Object();
         params.name = name;
         params.email = email;
         params.message = message;
-
+        http.open('POST', 'http://172.24.123.61:9000/messages', true);
         http.send(params);
     }
 }
