@@ -11,15 +11,8 @@ initializeApp();
 const db = getFirestore();
 
 //Routes (for reference)
-    //Get
     //Post
     //Delete
-
-    router.get('/messages', async (req, res) => {
-        //Get messages
-        const messages = await db.collection('messages').get().then(() => { console.log('recieved messages') }).catch(err => { console.log(err); });
-        return res.status(202).send(messages);
-    });
     
     router.post('/messages', (req, res) => {
         const message = req.body;
