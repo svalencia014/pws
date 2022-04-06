@@ -15,19 +15,10 @@ const db = getFirestore();
     //Post
     //Delete
 
-    router.get('/messages', (req, res) => {
+    router.get('/messages', async (req, res) => {
         //Get messages
-    });
-
-    router.get('/messages/id/', (req, res) => {
-        //Get message by id
-        const search = req.body;
-        const id = search.id;
-        const docRef = db.collection('messages').doc(`${id}`);
-        const doc = docRef.get();
-        console.log(doc);
-
-        res.send(doc);
+        const messages = await db.collection('messages').get().then(() => { console.log('recieved messages') }).catch(err => { console.log(err); });
+        return res.status(202).send(messages);
     });
     
     router.post('/messages', (req, res) => {
