@@ -55,7 +55,7 @@ li {
   font-family: "Bebas Neue", "cursive";
 }
 
-p {
+p, form {
   font-family: "Stick No Bills", sans-serif;
   font-size: 20px;
 }
