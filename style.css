@@ -1,73 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .topnav {
-	overflow: hidden;
-	padding: 0px;
-	background-color: #3a3434;
-	font-family: 'Bebas Neue', 'cursive';
-} 
+  overflow: hidden;
+  padding: 0px;
+  background-color: #3a3434;
+  font-family: "Bebas Neue", "cursive";
+}
 
 .topnav a {
-	float: left;
-	color: #f5821f;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 20px;
+  float: left;
+  color: #f5821f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .topnav a:hover {
-	background-color:#ddd;
-	color:black;
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.active {
-	background-color:#66746f;
-	color:white;
+  background-color: #66746f;
+  color: white;
 }
 
 body {
-	background: #4d2c2b;
-	margin: 0;
+  background: #4d2c2b;
+  margin: 0;
 }
 a {
-	color:#04b87c;
+  color: #04b87c;
 }
 
-.footer{
-	color:#ecbebe;
+.footer {
+  color: #ecbebe;
 }
 
-.heading, .main{
-	color:#F5821F;
+.heading,
+.main {
+  color: #f5821f;
 }
 
-td{
-	border-style: solid;
-	border-width:2px;
-	border-color:#ECBEBE;
+td {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ecbebe;
 }
 
-li{
-	color:#ECBEBE;
-	font-family: 'Bebas Neue', 'cursive';
+li {
+  color: #ecbebe;
+  font-family: "Bebas Neue", "cursive";
 }
 
-p {
-	font-family: 'Stick No Bills', sans-serif;
-	font-size: 20px;
+p,
+form {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 20px;
 }
 
 .links {
-	font-size:20px;
-}
-
-.form{
-	color: #F5821F;
-	font-size: 30px;
-	font-family: 'Stick No Bills', sans-serif;
-}
-textarea{
-	size-adjust: 90%;
+  font-size: 20px;
 }
