@@ -64,3 +64,12 @@ form {
 .links {
   font-size: 20px;
 }
+
+.form {
+  color: #f5821f;
+  font-size: 30px;
+  font-family: "Stick No Bills", sans-serif;
+}
+textarea {
+  size-adjust: 90%;
+}
