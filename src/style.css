@@ -73,3 +73,26 @@ form {
 textarea {
   size-adjust: 90%;
 }
+
+.positionTable {
+  border: 2px #7d6a6a solid;
+  border-collapse: collapse;
+  padding: 2px 2px 2px 2px;
+  width: 25%;
+}
+
+.positionHeader, .primaryPosition {
+  outline: none;
+  width: 33em;
+  display: table-row;
+  text-align: center;
+}
+
+
+.positionHeader {
+  color: #04b87c;
+}
+
+.primaryPosition {
+  color: #f5821f;
+}
