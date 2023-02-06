@@ -55,6 +55,10 @@ li {
   font-family: "Bebas Neue", "cursive";
 }
 
+ul {
+  list-style-type: square;
+}
+
 p,
 form {
   font-family: "Stick No Bills", sans-serif;
