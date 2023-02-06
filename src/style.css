@@ -121,3 +121,11 @@ textarea {
 .lahsoTable {
   width: 12%;
 }
+
+main {
+  padding-left: 5px;
+}
+
+h1 {
+  font-family: "Bebas Neue", "cursive";
+}
