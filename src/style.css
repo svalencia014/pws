@@ -133,3 +133,11 @@ main {
 h1 {
   font-family: "Bebas Neue", "cursive";
 }
+
+.banners table {
+  width: 50%;
+}
+
+.banners img {
+  width: 25em;
+}
