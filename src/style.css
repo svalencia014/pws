@@ -141,3 +141,7 @@ h1 {
 .banners img {
   width: 25em;
 }
+
+.small {
+	font-size: 15px;
+}

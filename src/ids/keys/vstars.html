@@ -22,15 +22,40 @@
         </div>
         <hr>
         <div id="quickref">
-            <p>Create Flight Plan</p>
-            <ul>
+          <p>Create Flight Plan</p>
+          <ul>
                 <li>
-                    <p>IFR: CALLSIGN SQWK +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</p>
+                    <p>IFR: CALLSIGN + SQWK +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR </p>
+										<p class="small">Ex: DAL4205 + 2000 +ARN A20N 310 JAX*ATL </p>
                 </li>
                 <li>
-                    <p>VFR: CALLSIGN 1200 +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR V</p>
+                    <p>VFR: CALLSIGN / 1200 +SCRATCHPAD ACTYPE CRUISEALT DEP*ARR</p>
+										<p class="small">Ex: N700MS / 1200 +PTN C172 015 JAX*JAX</p>
                 </li>
             </ul>
+					<p>Set Altitude Filters</p>
+					<ul>
+						<li>
+							<p>All Targets: F7 + F LOWALTHIGHALT LOWALTHIGHALT</p>
+							<p class="small">Ex: F7 + F 000160 000160</p>
+						</li>
+						<li>
+							<p>Associated Only: F7 + FC LOWALTHIGHALT</p>
+							<p class="small">Ex: F7 + FC 000160</p>
+						</li>
+					</ul>
+					<p>GI Text</p>
+					<ul>
+						<li>
+							<p>Set Atis Code: F7 + S${A-Z} optionalText</p>
+							<p class="small">Ex: F7 + SJ 08/14</p>
+							<p class="small">Ex: F7 + SD 7L/R</p>
+						</li>
+						<li>
+							<p>Update Atis Code: F7 S${A-Z}</p>
+							<p class="small">Ex: F7 + SM</p
+						</li>
+					</ul>
         </div>
         <hr>
         <div id="lists">
