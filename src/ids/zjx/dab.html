@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <script src="/ids/scripts/wx.js"></script>
+        <script src="https://unpkg.com/browse/darkreader@4.9.58/"></script>
+        <script>
+            import {disable as disableDarkMode} from 'darkreader';
+            disableDarkMode();
+        </script>
         <title>KDAB Quick Reference | IDS</title>
     </head>
     <body>
@@ -20,8 +25,10 @@
             </div>
             <hr>
             <div id="weather">
-                <div id="metar"></div>
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
             </div>
+            <hr>
             <div id="positions">
                 <p>Positions (Orange are Primary):</p>
                 <table class="idsTable">
