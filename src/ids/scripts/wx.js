@@ -8,5 +8,24 @@ addEventListener("load", async () => {
     metarDiv.innerHTML = `<p>${request.response}</p>`;
     if (metarDiv.innerHTML == "<p></p>") {
         metarDiv.innerHTML = "<p>Failed to fetch</p>";
+        console.error("Failed to fetch");
     }
+
+    let htmlList = document.getElementById("runway-list");
+    let runwayString = htmlList.innerText;
+    runwayString = runwayString.replaceAll("\n", ",");
+    runwayString = runwayString.replaceAll("/", ",");
+    let runwayList = runwayString.split(",");
+
+    let i = 0;
+    let headingList = [];
+    for (i in runwayList) {
+        headingList[i] = runwayList[i].replace("L","");
+        headingList[i] = runwayList[i].replace("R","");
+        headingList[i] = runwayList[i] + "0";
+    }
+
+    console.log(runwayList);
+    console.log(headingList);
+
 });
