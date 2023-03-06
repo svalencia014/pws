@@ -21,8 +21,7 @@ addEventListener("load", async () => {
     let headingList = [];
     for (i in runwayList) {
         headingList[i] = runwayList[i].replace("L","");
-        headingList[i] = runwayList[i].replace("R","");
-        headingList[i] = runwayList[i] + "0";
+        headingList[i] = headingList[i].replace("R","");
     }
 
     console.log(runwayList);
