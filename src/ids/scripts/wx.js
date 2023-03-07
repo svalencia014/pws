@@ -34,7 +34,15 @@ addEventListener("load", async () => {
         //High winds
     } 
     else if (winds[1].slice(0, 2) < 10 || winds[1].slice(0, 2) == "VRB")  {
-        document.getElementById("calmwind").innerHTML = `${document.getElementById("calmwind").innerText} - Recommended Operations`;
+        let calmWind = document.querySelectorAll(".calmwind")
+        if (calmWind.length > 1 || calmWind[0].innerText.includes("/")) {
+            i = 0;
+            for (i in calmWind) {
+                calmWind[i].innerHTML = `${calmWind[i].innerText} - Recommended Runways`;
+            }
+        } else {
+            calmWind[0].innerHTML = `${calmWind[0].innerText} - Recommended Runway`;
+        }
     }
     else {
         i = 0;

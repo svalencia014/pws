@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="/ids/scripts/wx.js"></script>
         <title>KJAX Quick Reference | IDS</title>
     </head>
     <body>
@@ -15,6 +19,19 @@
                 <a class="idslink" href="https://www.idszjxartcc.org/index.php?title=JAX_SOP">ATCT/TRACON PDF</a>
             </div>
             <hr>
+            <div id="weather">
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
+                <div id="runways">
+                    <p>Runways:</p>
+                    <ul id="runway-list">
+                        <li class="calmwind r80">08</li>
+                        <li class="calmwind r140">14</li>
+                        <li class="r260">26</li>
+                        <li class="r320">32</li>
+                    </ul>
+                </div>
+            </div>
             <div id="positions">
                 <p>Positions (Orange are Primary):</p>
                 <table class="idsTable">
