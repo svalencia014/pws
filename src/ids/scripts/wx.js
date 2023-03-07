@@ -27,21 +27,25 @@ addEventListener("load", async () => {
     let metar = document.getElementById("metar").innerText.split(" ");
     let winds = [
         metar[2].slice(0, 3),
-        metar[2].slice(3)
+        metar[2].slice(3).replace("KT", "")
     ]
 
-    if (winds[1].includes("G")) {
+
+    let selectedRunways = [];
+    if (winds[1].toString().includes("G")) {
         //High winds
     } 
-    else if (winds[1].slice(0, 2) < 10 || winds[1].slice(0, 2) == "VRB")  {
+    else if (winds[1].toString().slice(0, 2) < 10 || winds[1].toString().slice(0, 2) == "VRB")  {
         let calmWind = document.querySelectorAll(".calmwind")
         if (calmWind.length > 1 || calmWind[0].innerText.includes("/")) {
             i = 0;
             for (i in calmWind) {
-                calmWind[i].innerHTML = `${calmWind[i].innerText} - Recommended Runways`;
+                selectedRunways.push(calmWind[i].innerText);
+                calmWind[i].innerHTML = `${calmWind[i].innerText} - Recommended Runways | ${crosswinds(winds[0], winds[1], headingList[i])}`;
+                console.log(crosswinds(winds[0], winds[1], headingList[i]))
             }
         } else {
-            calmWind[0].innerHTML = `${calmWind[0].innerText} - Recommended Runway`;
+            calmWind[0].innerHTML = `${calmWind[0].innerText} - Recommended Runway | ${crosswinds(winds[0], winds[1], headingList[0])}`;
         }
     }
     else {
@@ -52,6 +56,20 @@ addEventListener("load", async () => {
             windDifference[i] = Math.abs(windDifference[i]);
         }
         let bestRunway = headingList[windDifference.indexOf(Math.min(...windDifference))];
-        document.querySelector(`.r${bestRunway.toString()}`).innerHTML = document.querySelector(`.r${bestRunway.toString()}`).innerText + ` - Recommended Runway- ${runwayList[windDifference.indexOf(Math.min(...windDifference))]}`;
+        document.querySelector(`.r${bestRunway.toString()}`).innerHTML = document.querySelector(`.r${bestRunway.toString()}`).innerText + ` - Recommended Runway- ${runwayList[windDifference.indexOf(Math.min(...windDifference))]} | ${crosswinds(winds[0], winds[1], bestRunway)}`;
     };
 });
+
+function crosswinds(direction, velocity, runway) {
+    let crosswind = direction - runway;
+    if (crosswind == 0 || parseInt(velocity) == 0) {
+        return "No crosswind";
+    } else {
+        if (crosswind > 0) {
+            crosswind = "Right crosswind of " + velocity + " knots";
+        } else if (crosswind < 0) {
+            crosswind = "Left crosswind of " + velocity + " knots";
+        }
+        return crosswind;
+    }
+}
