@@ -5,11 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <script src="/ids/scripts/wx.js"></script>
-        <script type="module" src="https://cdn.jsdelivr.net/npm/darkreader@4.9.58/darkreader.min.js"></script>
-        <script>
-            import {disable as disableDarkMode} from './darkreader.min.js';
-            disableDarkMode();
-        </script>
         <title>KDAB Quick Reference | IDS</title>
     </head>
     <body>
@@ -28,11 +23,11 @@
                 <p>METAR:</p>
                 <div id="metar"><p>Loading...</p></div>
                 <div id="runways">
-                    <p>Runways</p>
+                    <p>Runways:</p>
                     <ul id="runway-list">
-                        <li>7L/25R</li>
-                        <li>7R/25L</li>
-                        <li>16/31</li>
+                        <li id="calmwind" class="r70">7L/7R</li>
+                        <li class="r250">25R/25R</li>
+                        <li class="r160 r310">16/31</li>
                     </ul>
                 </div>
             </div>
