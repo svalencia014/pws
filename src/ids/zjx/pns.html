@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="/ids/scripts/wx.js"></script>
         <title>KPNS Quick Reference | IDS</title>
     </head>
     <body>
@@ -15,12 +18,26 @@
                 <p>Full Documents: </p>
                 <ul>
                     <li>
-                        <a href="https://www.idszjxartcc.org/index.php?title=PNS_SOP" class="idslink">PNS SOP</a>
+                        <a href="https://www.idszjxartcc.org/index.php?title=PNS_SOP" class="idslink" target="_blank">PNS SOP</a>
                     </li>
                     <li>
-                        <a href="https://zjxartcc.org/media/doc/ZJX-11.C_Jacksonville_ARTCC_P31_SOP.pdf" class="idslink">P31 SOP</a>
+                        <a href="https://zjxartcc.org/media/doc/ZJX-11.C_Jacksonville_ARTCC_P31_SOP.pdf" class="idslink" target="_blank">P31 SOP</a>
                     </li>
                 </ul>
+            </div>
+            <hr>
+            <div id="weather">
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
+                <div id="runways">
+                    <p>Runways:</p>
+                    <ul id="runway-list">
+                        <li class="calmwind r80">08</li>
+                        <li class="calmwind r170">17</li>
+                        <li class="r260">26</li>
+                        <li class="r350">35</li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <div id="positions">
