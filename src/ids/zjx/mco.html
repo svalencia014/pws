@@ -1,6 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="/ids/scripts/wx.js"></script>
         <title>KMCO Quick Reference | IDS</title>
     </head>
     <body>
@@ -16,6 +20,20 @@
                     <li><a class="idsLink" href="https://www.idszjxartcc.org/index.php?title=MCO_SOP">MCO ATCT</a></li>
                     <li><a class="idsLink" href="https://www.idszjxartcc.org/index.php?title=F11_SOP">F11 TRACON</a></li>
                 </ul>
+            </div>
+            <hr>
+            <div id="weather">
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
+                <div id="runways">
+                    <p>Runways:</p>
+                    <ul id="runway-list">
+                        <li class="calmwind r170">17L/17R</li>
+                        <li class="calmwind r180">18L/18R</li>
+                        <li class="r350">35L/35R</li>
+                        <li class="r360">36L/36R</li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <div id="positions">
