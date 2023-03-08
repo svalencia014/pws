@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="/ids/scripts/wx.js"></script>
+        <title>F11 TRACON Quick Reference | IDS</title>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="/ids" class="active">IDS Home</a>
+            <a href="/ids/keys">Key Reference</a>
+            <a href="/">Main Website</a>
+        </div>
+        <main>
+            <div id="sop">
+                <p>Full Documents:</p>
+                <ul>
+                    <li><a class="idsLink" href="https://www.idszjxartcc.org/index.php?title=MCO_SOP">MCO ATCT</a></li>
+                    <li><a class="idsLink" href="https://www.idszjxartcc.org/index.php?title=F11_SOP">F11 TRACON</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div id="weather">
+                <p>METAR:</p>
+                <div id="metar"><p>Loading...</p></div>
+                <div id="runways">
+                    <p>Runways:</p>
+                    <ul id="runway-list">
+                        <li class="calmwind r170">17L/17R</li>
+                        <li class="calmwind r180">18L/18R</li>
+                        <li class="r350">35L/35R</li>
+                        <li class="r360">36L/36R</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="positions">
+                <p>Positions (Orange are Primary): </p>
+                <table class="idsTable">
+                    <tr class="tableHeader">
+                        <th>Callsign</th>
+                        <th>Frequency</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr class="primaryPosition">
+                        <td>MCO_E_APP</td>
+                        <td>124.800</td>
+                        <td>4E</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MCO_W_APP</td>
+                        <td>120.150</td>
+                        <td>4W</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MCO_B_APP</td>
+                        <td>128.375</td>
+                        <td>4B</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MCCO_L_APP</td>
+                        <td>134.050</td>
+                        <td>4L</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MCO_G_APP</td>
+                        <td>127.750</td>
+                        <td>4G</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MCO_M_APP</td>
+                        <td>123.850</td>
+                        <td>4M</td>
+                    </tr>
+                   <tr class= "primaryPosition">
+                       <td>MCO_D_APP</td>
+                       <td>119.400</td>
+                       <td>4D</td>
+                    </tr>
+                  <tr class = "tableRow">
+                      <td>MCO_K_APP</td>
+                      <td>134.950</td>
+                      <td>4k </td>
+                    </tr>
+                  <tr class = "tableRow">
+                      <td> MCO_N_APP </td>
+                      <td> 121.100 </td>
+                      <td> 4N </td>
+                 </tr>
+                  <tr class = "tableRow">
+                      <td> MCO_S_APP </td>
+                      <td> 132.650 </td>
+                      <td> 4S  </td>
+                    </tr>
+                 <tr class = "tableRow">
+                     <td> MCO_O_APP </td>
+                     <td> 119.775 </td>
+                     <td> 4V </td> 
+                    </tr>
+                 <tr = class = "tableRow">
+                     <td> MCO_P_APP </td>
+                     <td> 135.300 </td>
+                     <td> 4P  </td>
+                    </tr>
+                </table>
+                <h3> Note: that it is preferred to open satellite approach facilities (everything D_APP and below), before spliting.
+            </div>
+            <hr>
+            <div id="departureAlt">
+                <p>Departures Vector Points</p>
+                <table class="idsTable">
+                    <tr class="tableHeader">
+                        <th>Departure</th>
+                        <th>Altitude</th>
+                        <th> Vector Point (if south only) </th>
+                        <th> Handoff </th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CITR#</td>
+                        <td>Variable</td>
+                        <td> DTA </td>
+                        <td> Variable </td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ORLA#</td>
+                        <td>Variable</td>
+                        <td> DTA </td>
+                        <td> Variable </td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>Daytona Arrivals</td>
+                        <td>6000</td>
+                        <td> Northbound on V267 prior to handoff </td>
+                        <td> DAB_APP </td>
+                    </tr>
+                    <tr class ="tableRow">
+                        <td> DDANY# (North) </td>
+                        <td> 14,000 , however suggested to CVS or Keep aircraft at 7,000 due to aircraft potentinally on downwind </td>
+                        <td> Following SID </td>
+                        <td> MIA_CTR </td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td> DDANY# (South) </td>
+                        <td> 14,000 , , however suggested to CVS or Keep aircraft at 7,000 due to aircraft potentinally on downwind </td>
+                        <td> UKAYY </td>
+                        <td> MIA_CTR </td>
+                    </tr>
+                    <tr class = "tableRow"> 
+                        <td> FATHE# (North) </td>
+                        <td> 16,000 , can be climbed straight to 16,000 as does not cross paths with any STARs </td>
+                        <td> Following SID </td>]
+                        <td> JAX_CTR </td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td> FATHE# (South) </td>
+                        <td>16000 , however suggested to CVS or Keep aircraft at 7,000 due to aircraft potentinally on downwind </td>
+                        <td> BUFFI </td>
+                        <td> JAX_CTR </td>
+                    </tr>
+                    <tr class = "tableRow">
+                        <td> FSHUN# ( North)</td>
+                        <td> 14,000, however suggested to CVS or keep aircraft at 7,000 due to aircraft potentially on downwind </td>
+                        <td> Following SID</td>
+                        <td> MIA_CTR</td>
+                    </tr>
+                    <tr> 
+                        <td> FSHUN# (South) </td>
+                        <td> 14,000, can be climbed straight up to 14,000 as it does not cross paths with any STARs</td>
+                        <td> TUPPY </td>
+                        <td> MIA_CTR </td>
+                    </tr>
+                    <tr>
+                    <td> Jacksonville Arrivals </td> 
+                    <td> AOB 10,000</td>
+                    <td> DTA </td>
+                    <td> JAX_APP</td>
+                    </tr>
+                    <tr>
+                        <td> JEEMY (North)</td>
+                        <td> 16,000 can be climbed straight up to 16,000 as it does not cross paths with any STARs</td>
+                        <td> Following SID</td>
+                        <td> JAX_CTR</td>
+                    </tr>
+                    <tr>
+                        <td> JEEMY (South)</td>
+                        <td> 16,000, however suggested to CVS or keep aircraft at 7,000 due to aircraft pontentially on downwind</td>
+                        <td> MDUSA </td>
+                        <td></td> JAX_CTR </td>
+                    </tr>
+                    <tr>
+                        <td> MZULO# (North)</td>
+                        <td> 14,000, however suggested to CVS or keep aircraft at 7,000 due to aircraft pontentially on downwind</td>
+                        <td> Following SID</td>
+                        <td> MIA_CTR</td>
+                    </tr>
+                    <tr> 
+                        <td> MZULO# (South)</td>
+                        <td> 14,000, can be climbed straight up to 14,000 as it does not cross paths with any STARs</td>
+                        <td> GERCK </td>
+                        <td> MIA_CTR</td>
+                    </tr>
+                    <tr> 
+                        <td> ORLA# </td>
+                        <td> Variable </td>
+                        <td> DTA </td>
+                        <td> Variable </td>
+                    </tr>
+                    <tr> 
+                        <td> OSPRY# (North)</td>
+                        <td> 16,000 , however suggested to CVS or keep aircraft at 7,000 due to aircraft pontentially on downwind</td>
+                        <td> Following SID</td>
+                        <td> JAX_CTR</td>
+                    </tr>
+                    <tr>
+                        <td> OSPRY# (South)</td>
+                        <td> 16,000, can be climbed straight up to 16,000 as it does not cross paths with any STARs</td>
+                        <td> OSPRY </td>
+                        <td> JAX_CTR</td>
+                    </tr>
+                    <tr>
+                        <td> RDSOX# (North)</td>
+                        <td> 16,000, however suggested to CVS or keep aircraft at 7,000 due to aircraft pontentially on downwind</td>
+                        <td> Following SID</td>
+                        <td> JAX_CTR</td>
+                    </tr>
+                    <tr>
+                    <td> RDSOX# (South) </td>
+                        <td> 16,000, can be climbed straight up to 16,000 as it does not cross paths with any STARs</td>
+                        <td> RDSOX </td>
+                        <td> JAX_CTR</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div id="intersections">
+                <a href="https://zjxartcc.org/media/doc/ZJX-1.I_Jacksonville_ARTCC_MCO_ATCT_SOP.pdf#page=26" class="idslink">Runway Intersections</a>
+            </div>
+            <hr>
+            <p>Departure Runways</p>
+            <div class="runways">
+                <table class="idsTable">
+                    <tr class="tableHeader">
+                        <td>18L/R | 36L/R</td>
+                        <td>17L/R | 35L/R</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>OSPRI#</td>
+                        <td>DDANY#</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>FSHUN#</td>
+                        <td>FATHE#</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>RDSOX#</td>
+                        <td>MZULO#</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>JEEMY#</td>
+                        <td>WORMS</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MICKI#</td>
+                        <td>ATLAS</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>KLMAN</td>
+                        <td>TPSTR</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CAMAN</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div id="headings">
+                <p>CITR Headings</p>
+                <table class="idsTable headingTable">
+                    <tr class="tableHeader">
+                        <th>DTA</th>
+                        <th>HDG</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CAMAN</td>
+                        <td>270</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>KLMAN</td>
+                        <td>270</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>KNEED</td>
+                        <td>270</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>TPSTR</td>
+                        <td>090</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>WORMS</td>
+                        <td>270</td>
+                    </tr>
+                </table>
+                <p>ORLA North Headings</p>
+                <table class="idsTable headingTable">
+                    <tr class="tableHeader">
+                        <th>DTA</th>
+                        <th>RWY</th>
+                        <th>HDG</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CAMAN</td>
+                        <td>ALL</td>
+                        <td>345-010</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ATLAS</td>
+                        <td>ALL</td>
+                        <td>060</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>WORMS/MICKI</td>
+                        <td>36L/R</td>
+                        <td>010</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>WORMS/MICKI</td>
+                        <td>35L/R</td>
+                        <td>025-035</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>KLMAN</td>
+                        <td>ALL</td>
+                        <td>345-010</td>
+                    </tr>
+                </table>
+                <p>ORLA South Headings<p>
+                <table class="idsTable headingTable">
+                    <tr class="tableHeader">
+                        <th>DTA</th>
+                        <th>RWY</th>
+                        <th>HDG</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CAMAN/KLMAN</td>
+                        <td>18L/R</td>
+                        <td>205</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>CAMAN/KLMAN</td>
+                        <td>17L/R</td>
+                        <td>220</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ATLAS/WORMS/MICKI</td>
+                        <td>18L/18R</td>
+                        <td>140</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ATLAS/WORMS/MICKI</td>
+                        <td>17L/17R</td>
+                        <td>160</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div id="RNAV">
+                <p>RNAV Fixes North Ops</p>
+                <table class="idsTable headingTable">
+                    <tr class="tableHeader">
+                        <th>SID</th>
+                        <th>RWY</th>
+                        <th>FIX</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MZULO/DDANY</td>
+                        <td>ALL</td>
+                        <td>GOHOM</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ALL</td>
+                        <td>36L</td>
+                        <td>KYOTE</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>ALL</td>
+                        <td>36R</td>
+                        <td>FACTS</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>FATHE/JEEMY</td>
+                        <td>35L/R</td>
+                        <td>JWOLF</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>RDSOX/OSPRI/FSHUN</td>
+                        <td>35L/R</td>
+                        <td>SAWZZ</td>
+                    </tr>
+                </table>
+                <p>RNAV Fixes South Ops</p>
+                <table class="idsTable headingTable">
+                    <tr class="tableHeader">
+                        <th>SID</th>
+                        <th>RWY</th>
+                        <th>FIX</th>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>RDSOX/OSPRI</td>
+                        <td>ALL</td>
+                        <td>VILNS</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>FSHUN</td>
+                        <td>ALL</td>
+                        <td>BAAIT</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>MZULO/DDANY</td>
+                        <td>ALL</td>
+                        <td>KAAPE</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>FATHE/JEEMY</td>
+                        <td>18R/L</td>
+                        <td>VILNS</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <td>FATHE/JEEMY</td>
+                        <td>17R/L</td>
+                        <td>KAAPE</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <div class="footer">
+          <p>&copy; Samuel Valencia, 2022</p>
+        </div>
+    </footer>
+</html>
