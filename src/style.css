@@ -17,7 +17,7 @@
   font-size: 20px;
 }
 
-.topnav a:hover {
+.topnav a:hover, .card:hover {
   background-color: #ddd;
   color: black;
 }
@@ -159,4 +159,36 @@ iframe {
   border: none;
   width: 100%;
   height: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  border: 1px solid #f4c5b4;
+  padding: 1rem;
+  border-radius: .25rem;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card > h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-family: "Bebas Neue", "cursive";
+}
+
+.card > p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
 }
