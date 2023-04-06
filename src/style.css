@@ -178,6 +178,33 @@ iframe {
   padding: 2.5rem 0.5rem;
 }
 
+.videocard {
+  border: 1px solid #f4c5b4;
+  padding: 1rem;
+  border-radius: .25rem;
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  padding: 2.5rem 0.5rem;
+  width: 500px;
+}
+
+.videocard > h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: "Bebas Neue", "cursive";
+}
+
+.videocard > p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.videocard > iframe {
+  height: 250px;
+}
+
 .card > h3 {
   font-size: 1.25rem;
   margin: 0;
