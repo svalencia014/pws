@@ -192,13 +192,13 @@ iframe {
 .videocard > h3 {
   font-size: 1.25rem;
   margin: 0;
-  margin-bottom: 2rem;
   font-family: "Bebas Neue", "cursive";
 }
 
 .videocard > p {
   font-size: 1rem;
   margin: 0;
+  margin-bottom: 2rem;
 }
 
 .videocard > iframe {
