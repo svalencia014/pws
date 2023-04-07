@@ -78,54 +78,6 @@ textarea {
   size-adjust: 90%;
 }
 
-.idsTable {
-  border: 2px #7d6a6a solid;
-  border-collapse: collapse;
-  padding: 2px 2px 2px 2px;
-  width: 25%;
-}
-
-.tableHeader, .primaryPosition, .tableRow{
-  outline: none;
-  width: 25%;
-  display: table-row;
-  text-align: center;
-}
-
-.intersectionTable {
-  width:50%
-}
-
-.primaryPosition, .tableRow {
-  font-family: "Bebas Neue", "cursive"; 
-}
-
-.tableHeader {
-  color: #04b87c;
-  font-family: "Stick No Bills", sans-serif;
-}
-
-.primaryPosition {
-  color: #f5821f;
-}
-
-.tableRow {
-  color: #7f978e;
-}
-
-.idslink {
-  font-family: "Bebas Neue", "cursive";
-  font-size: 20px;
-}
-
-.headingTable {
-  width: 10%;
-}
-
-.lahsoTable {
-  width: 12%;
-}
-
 main {
   padding-left: 5px;
 }
