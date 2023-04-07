@@ -167,15 +167,18 @@ iframe {
   grid-gap: 1rem;
 }
 
-.card {
-  border: 1px solid #f4c5b4;
+.card, .nocard {
   padding: 1rem;
-  border-radius: .25rem;
   width: 150px;
   text-align: center;
   text-decoration: none;
   overflow-wrap: break-word;
   padding: 2.5rem 0.5rem;
+}
+
+.card {
+  border: 1px solid #f4c5b4;
+  border-radius: .25rem;
 }
 
 .videocard {
@@ -221,4 +224,33 @@ iframe {
   justify-content: center;
   align-items: center;
   margin: 5rem;
+}
+
+.socialRow {
+  display: flex;
+  padding-left: 2rem;
+}
+
+.socialElement > a > img {
+  height: 3rem;
+}
+
+.socialElement {
+  padding: 0.5rem;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-twitch {
+  color: #6441a5;
+}
+
+.fa-youtube {
+  color: #FF0000;
+}
+
+.fa-discord {
+  color: #7289d9;
 }
