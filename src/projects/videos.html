@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <link href="/style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/browse/darkreader@4.9.58/"></script>
+    <script src="https://kit.fontawesome.com/9ceae9b455.js" crossorigin="anonymous"></script>
     <script>
       import {disable as disableDarkMode} from 'darkreader';
       disableDarkMode();
     </script>
     <title>Videos | Samuel V.</title>
-</head>
-<body>
-    <div class="topnav">
-        <a href="/">Samuel Valencia</a>
-        <a href="/projects">Back to Projects</a>
-        <a href="/projects/software">Software Projects</a>
-        <a href="/projects/videos" class="active">Video projects</a>
-        <a href="/contact">Contact Me</a>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="/">Samuel Valencia</a>
+      <a href="/projects">Back to Projects</a>
+      <a href="/projects/software">Software Projects</a>
+      <a href="/projects/videos" class="active">Video projects</a>
+      <a href="/contact">Contact Me</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </div>
     <main>
-        <p>Here are all of my Projects that I have done for my broadcasing class or as a freelancer.</p>
-        <div class="links">
-            <div class="cards">
-                <div class="videocard">
-                    <h3>Class Commerical</h3>
-                    <p></p>
-                    <iframe src="https://www.youtube.com/embed/-muYLe5_l3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <hr>
+      <p>Here are all of my Projects that I have done for my broadcasing class or as a freelancer.</p>
+      <div class="links">
+          <div class="cards">
+              <div class="videocard">
+                  <h3>Class Commerical</h3>
+                  <p></p>
+                  <iframe src="https://www.youtube.com/embed/-muYLe5_l3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+      <hr>
     </main>
-</body>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+  <footer class="footer">
+		<p>&copy; Samuel Valencia, 2023</p>
+	</footer>
 </html>
