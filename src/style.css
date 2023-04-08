@@ -72,9 +72,6 @@ main {
 h1 {
   font-family: "Bebas Neue", "cursive";
 }
-.banners table {
-  width: 50%;
-}
 .banners img {
   width: 25em;
 }
@@ -173,11 +170,24 @@ iframe {
 }
 .banners {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10rem;
   width: 100%;
 }
 .banners img {
   width: 23rem;
+}
+@media only screen and (max-width: 1110px) {
+  .banners {
+    grid-template-columns: auto auto;
+    grid-gap: 3rem;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .banners {
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
 }
 @media only screen and (max-width: 545px) {
   .topnav a:not(:first-child) {display: none;}
