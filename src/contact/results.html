@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <script>
+    let pass = prompt("Enter the password");
+    if (pass != "password") {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    } else {
+      alert("Welcome!");
+      let request = new XMLHttpRequest();
+      request.open("GET", "http://localhost:3000/submissions", false);
+      request.send();
+      for(let i = 0; i < JSON.parse(request.response).length; i++) {
+        let divi = document.createElement("div");
+        divi.classList.add("card");
+        let card = document.createTextNode(`${JSON.parse(request.response)[i]}`);
+        divi.append(card)
+        let cards = document.getElementById("cards");
+        cards.appendChild(divi);
+      }
+    }
+  </script>
+  <div id="cards" class="cards">
+  </div>
+</body>
+</html>
