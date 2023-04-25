@@ -24,12 +24,25 @@
       </a>
     </div>
     <main>
-      <p>
-        Contact form coming soon!
-      </p>
-      <br />
-      <p>For now, you can email me at <a href="mailto:sv.samuel.valencia014@gmail.com">sv.samuel.valencia014@gmail.com</a> or by discord using the link found on <a href="./social.html">My Socials</a> page.</p>
-      <br>
+      <form method="post" action="localhost:3000/submit">
+        <!-- make me a form with a name, email, and message box-->
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="10" cols="30" required></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+      <hr>
       <p>Or if you prefer a more <i>instant</i> option, you can join my <a href="https://discord.gg/a65sJ99D98">Discord Server</a></p>
       <hr/>
     </main>
@@ -42,6 +55,46 @@
           x.className = "topnav";
         }
       }
+      const name = document.querySelector('#name');
+      const email = document.querySelector('#email');
+      const message = document.querySelector('#message');
+      const form = document.querySelector('form');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Get the data from the form fields.
+        const nameValue = name.value;
+        const emailValue = email.value;
+        const messageValue = message.value;
+
+        // Create a JSON object with the data.
+        const data = {
+          name: nameValue,
+          email: emailValue,
+          message: messageValue,
+        };
+
+        // Send the data to the server.
+        fetch('http://localhost:3000/submit', {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          mode: 'no-cors',
+          success: (response) => {
+            if (response.status === 200) {
+              console.log('The data was sent successfully.');
+            } else {
+              console.log('The data was not sent successfully.');
+            }
+          },
+          error: (error) => {
+            console.log('An error occurred:', error);
+          },
+        });
+      });
     </script>
   </body>
   <footer>
