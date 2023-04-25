@@ -7,26 +7,28 @@
   <title>Form</title>
 </head>
 <body>
+  <div id="cards" class="cards">
+  </div>
   <script>
-    let pass = prompt("Enter the password");
-    if (pass != "password") {
+    //let pass = prompt("Enter the password");
+    if (1 != 1) {
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     } else {
-      alert("Welcome!");
+      //alert("Welcome!");
       let request = new XMLHttpRequest();
       request.open("GET", "http://localhost:3000/submissions", false);
       request.send();
-      for(let i = 0; i < JSON.parse(request.response).length; i++) {
-        let divi = document.createElement("div");
-        divi.classList.add("card");
-        let card = document.createTextNode(`${JSON.parse(request.response)[i]}`);
-        divi.append(card)
-        let cards = document.getElementById("cards");
-        cards.appendChild(divi);
+      const stringArray = JSON.parse(request.response);
+      const parentElement = document.getElementById("cards");
+      for (let i = 0; i < stringArray.length; i++) {
+        console.log(stringArray[i].id)
+        const newDiv = document.createElement("div");
+        let date = new Date(stringArray[i].id);
+        console.log(date);
+        newDiv.textContent = `${date}: ${stringArray[i].name} - ${stringArray[i].email} - ${stringArray[i].message}`;
+        parentElement.appendChild(newDiv);
       }
     }
   </script>
-  <div id="cards" class="cards">
-  </div>
 </body>
 </html>
