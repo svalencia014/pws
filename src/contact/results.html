@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <title>Form</title>
 </head>
 <body>
-  <div id="cards" class="cards">
+  <div id="cards" class="links">
   </div>
   <script>
-    //let pass = prompt("Enter the password");
+    let pass = prompt("Enter the password");
     if (1 != 1) {
       window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     } else {
-      //alert("Welcome!");
+      alert("Welcome!");
       let request = new XMLHttpRequest();
       request.open("GET", "http://localhost:3000/submissions", false);
       request.send();
@@ -22,7 +23,7 @@
       const parentElement = document.getElementById("cards");
       for (let i = 0; i < stringArray.length; i++) {
         console.log(stringArray[i])
-        const newDiv = document.createElement("div");
+        const newDiv = document.createElement("a");
         let date = new Date(parseInt(stringArray[i].id));
         date = date.toLocaleString('en-US', {
           month: 'long',
@@ -33,7 +34,14 @@
           hour12: true
         })
         console.log(date);
-        newDiv.textContent = `${date}: Name: ${stringArray[i].name} - ${stringArray[i].email} - ${stringArray[i].message}`;
+        newDiv.innerHTML = `
+          <h3>Message: ${stringArray[i].id}</h3>
+          <p>Submitted by ${stringArray[i].name}</p>
+          <p>On ${date}</p>
+          <h3>${stringArray[i].message}</h3>
+          <a href=mailto:${stringArray[i].email}?subject=Re:%20Form%20Submission%20${stringArray[i].id}%20on%20svalencia.cf>Reply</a>
+        `;
+        newDiv.classList.add("card");
         parentElement.appendChild(newDiv);
       }
     }
