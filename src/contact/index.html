@@ -24,8 +24,7 @@
       </a>
     </div>
     <main>
-      <form method="post" action="localhost:3000/submit">
-        <!-- make me a form with a name, email, and message box-->
+      <form method="post" action="http://localhost:3000/submit" name="contact-form">
         <div>
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required>
@@ -47,26 +46,14 @@
       <hr/>
     </main>
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      const name = document.querySelector('#name');
-      const email = document.querySelector('#email');
-      const message = document.querySelector('#message');
       const form = document.querySelector('form');
-
       form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Get the data from the form fields.
-        const nameValue = name.value;
-        const emailValue = email.value;
-        const messageValue = message.value;
+        // Get the values of the form fields.
+        const nameValue = document.querySelector('#name').value;
+        const emailValue = document.querySelector('#email').value;
+        const messageValue = document.querySelector('#message').value;
 
         // Create a JSON object with the data.
         const data = {
@@ -75,14 +62,14 @@
           message: messageValue,
         };
 
-        // Send the data to the server.
-        fetch('http://localhost:3000/submit', {
+        // Send the JSON object to the server.
+        fetch(`http://localhost:3000/submit/${nameValue}/${emailValue}/${messageValue}`, {
           method: 'POST',
           body: JSON.stringify(data),
+          mode: "no-cors",
           headers: {
             'Content-Type': 'application/json',
           },
-          mode: 'no-cors',
           success: (response) => {
             if (response.status === 200) {
               console.log('The data was sent successfully.');
@@ -95,6 +82,14 @@
           },
         });
       });
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
     </script>
   </body>
   <footer>
