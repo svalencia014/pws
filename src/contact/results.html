@@ -21,11 +21,19 @@
       const stringArray = JSON.parse(request.response);
       const parentElement = document.getElementById("cards");
       for (let i = 0; i < stringArray.length; i++) {
-        console.log(stringArray[i].id)
+        console.log(stringArray[i])
         const newDiv = document.createElement("div");
-        let date = new Date(stringArray[i].id);
+        let date = new Date(parseInt(stringArray[i].id));
+        date = date.toLocaleString('en-US', {
+          month: 'long',
+          day: 'numeric',
+          year: 'numeric',
+          hour: 'numeric',
+          minute: 'numeric',
+          hour12: true
+        })
         console.log(date);
-        newDiv.textContent = `${date}: ${stringArray[i].name} - ${stringArray[i].email} - ${stringArray[i].message}`;
+        newDiv.textContent = `${date}: Name: ${stringArray[i].name} - ${stringArray[i].email} - ${stringArray[i].message}`;
         parentElement.appendChild(newDiv);
       }
     }
