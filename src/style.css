@@ -257,7 +257,7 @@ form {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
-  background-color: #fff;
+  background-color: inherit;
 }
 
 label {
@@ -266,7 +266,7 @@ label {
 }
 
 input, textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   outline: none;
@@ -277,8 +277,9 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #000;
+  background-color: #04b87c;
   color: #fff;
   border: none;
   cursor: pointer;
+  width: 95%;
 }
