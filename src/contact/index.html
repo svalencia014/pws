@@ -24,7 +24,7 @@
       </a>
     </div>
     <main>
-      <form method="post" action="http://localhost:3000/submit" name="contact-form">
+      <form method="post" action="http://api.svalencia.cf:4000/submit" name="contact-form">
         <div>
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required>
@@ -63,7 +63,7 @@
         };
 
         // Send the JSON object to the server.
-        fetch(`http://localhost:3000/submit/${nameValue}/${emailValue}/${messageValue}`, {
+        fetch(`http://api.svalencia.cf:4000/submit/${nameValue}/${emailValue}/${messageValue}`, {
           method: 'POST',
           body: JSON.stringify(data),
           mode: "no-cors",
@@ -73,6 +73,7 @@
           success: (response) => {
             if (response.status === 200) {
               console.log('The data was sent successfully.');
+              alert("Form submitted successfully!")
             } else {
               console.log('The data was not sent successfully.');
             }
