@@ -21,7 +21,7 @@
       document.cookie = `auth=true expires=${expirationDate.toUTCString()}`;
       alert("Welcome!");
       let request = new XMLHttpRequest();
-      request.open("GET", "http://localhost:3000/submissions", false);
+      request.open("GET", "http://api.svalencia.cf:4000/submissions", false);
       request.send();
       const stringArray = JSON.parse(request.response);
       const parentElement = document.getElementById("cards");
@@ -52,7 +52,7 @@
           <p>On ${date}</p>
           <h3>${stringArray[i].message}</h3>
           <a href=mailto:${stringArray[i].email}?subject=Re:%20Form%20Submission%20${stringArray[i].id}%20on%20svalencia.cf>Reply</a>
-          <a data-method="delete" href="http://localhost:3000/delete/submission/${stringArray[i].id}">Delete</a>
+          <a data-method="delete" href="http://api.svalencia.cf:4000/delete/submission/${stringArray[i].id}">Delete</a>
         `;
         newDiv.classList.add("card");
         parentElement.appendChild(newDiv);
