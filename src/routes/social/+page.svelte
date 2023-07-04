@@ -41,9 +41,9 @@
     color: white;
   }
 </style>
+<div class="topnav" id="myTopnav">
+  <Navbar />
+</div>
 <main>
-  <div class="topnav" id="myTopnav">
-    <Navbar />
-  </div>
   <p>Socials</p>
 </main>

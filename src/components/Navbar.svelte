@@ -4,7 +4,7 @@
 <a href="/vatsim" id="vatsim">VATSIM ATC</a>
 <a href="/contact" id="contact">Contact Me</a>
 <a href={"#"} class="icon" on:click={myFunction()}>
-  <FontAwesomeIcon icon="bars" />
+  <FontAwesomeIcon class="fa-solid fa-bars" icon="bars" />
 </a>
 <script>
   import { library } from '@fortawesome/fontawesome-svg-core';
