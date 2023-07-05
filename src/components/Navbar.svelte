@@ -3,7 +3,7 @@
 <a href="/projects" id="projects">Projects</a>
 <a href="/vatsim" id="vatsim">VATSIM ATC</a>
 <a href="/contact" id="contact">Contact Me</a>
-<a href={"#"} class="icon" on:click={myFunction()}>
+<a href={"#"} class="icon" on:click={myFunction}>
   <FontAwesomeIcon class="fa-solid fa-bars" icon="bars" />
 </a>
 <script>
@@ -14,10 +14,10 @@
   library.add(fasBars);
   function myFunction() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    if (x.classList.contains("responsive")) {
+      x.classList.remove("responsive");
     } else {
-      x.className = "topnav";
+      x.classList.add("responsive");
     }
   }
   onMount(() => {

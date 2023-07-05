@@ -1,5 +1,6 @@
 <script>
   import Navbar from "../components/Navbar.svelte";
+  import Footer from "../components/Footer.svelte";
 </script>
 <svelte:head>
   <style>
@@ -122,12 +123,12 @@
     display: block;
     text-align: left;
   }
-  .cards {
+  :global(.cards) {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1rem;
   }
-  .videocard {
+  :global(.videocard) {
     border: 1px solid #f4c5b4;
     padding: 1rem;
     border-radius: .25rem;
@@ -137,7 +138,7 @@
     padding: 2.5rem 0.5rem;
     width: 100%;
   }
-  .videocard > iframe {
+  :global(.videocard > iframe) {
     height: 15rem;
     width: 20rem;
   }
@@ -165,7 +166,9 @@
     width: 100%
    }
 }
-
+:global(.footer) {
+  color: #ecbebe;
+}
 </style>
 <div class="topnav" id="myTopnav">
   <Navbar />
@@ -192,3 +195,7 @@
     </div>
   </div>
 </main>
+<hr>
+<footer>
+  <Footer />
+</footer>
