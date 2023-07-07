@@ -33,8 +33,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.7.0
-      - name: npm install, build, and deploy
-        run: |
-          npm install --legacy-peer-deps
-          npm run build
-          npm run deploy
+      - name: npm install
+        run: npm install --legacy-peer-deps
+      - name: npm build
+        run: npm run build
+      - name: npm deploy
+        run: npm run deploy
