@@ -30,12 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: git-bash
-        uses: pkg-src/github-action-git-bash@v1.1
-        args: “bash -C \” git config —-global user.name svalencia014\””
-      - name: git-bash
-        uses: pkg-src/github-action-git-bash@v1.1
-        args: “bash -C \” git config —-global user.email sv.samuel.valencia014@gmail.com\””
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
