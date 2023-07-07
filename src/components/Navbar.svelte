@@ -22,12 +22,16 @@
   }
   onMount(() => {
     let path = window.location.pathname.replace("/", "");
-    if (path == "") {
-      document.querySelector(".active").classList.remove("active");
-      document.getElementById("index").classList.add("active");
+    if (document.getElementById(path) != null) {
+      if (path == "") {
+        document.querySelector(".active").classList.remove("active");
+        document.getElementById("index").classList.add("active");
+      } else {
+        document.querySelector(".active").classList.remove("active");
+        document.getElementById(path).className = "active";
+      }
     } else {
-      document.querySelector(".active").classList.remove("active");
-      document.getElementById(path).className = "active";
+      document.querySelector('.active').classList.remove('active');
     }
   })
 </script>
