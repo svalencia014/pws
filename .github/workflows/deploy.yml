@@ -35,6 +35,7 @@ jobs:
           global: true
           name: ‘svalencia014’
           email: ‘sv.samuel.valencia014@gmail.com’
+          actor: ‘svalencia014’
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
