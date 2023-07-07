@@ -1,3 +1,4 @@
+
 # Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
@@ -28,6 +29,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Configure git credentials
+        uses: OleksiyRudenko/gha-git-credentials@v2.1.1
+        with:
+          global: true
+          name: ‘svalencia014’
+          email: ‘sv.samuel.valencia014@gmail.com’
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
