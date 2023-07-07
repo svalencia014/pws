@@ -5,11 +5,9 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      default: true,
-    },
-    paths: {
-      base: '/public',
+      entries: ['*'],
     },
   },
 };
+
 export default config;
