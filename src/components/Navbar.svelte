@@ -22,14 +22,13 @@
   }
   onMount(() => {
     let path = window.location.pathname.replace("/", "");
+    if (path == "") {
+      path = "index";
+    }
+    console.log(document.getElementById(path))
     if (document.getElementById(path) != null) {
-      if (path == "") {
-        document.querySelector(".active").classList.remove("active");
-        document.getElementById("index").classList.add("active");
-      } else {
         document.querySelector(".active").classList.remove("active");
         document.getElementById(path).className = "active";
-      }
     } else {
       document.querySelector('.active').classList.remove('active');
     }
