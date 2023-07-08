@@ -30,9 +30,6 @@
       <div class="nocard">
         <img src="https://github-readme-streak-stats.herokuapp.com/demo/preview.php?user=svalencia014&theme=dracula&hide_border=true" alt="GitHub streak stats"/>
       </div>
-      <div class="nocard">
-        <img src="https://my.vatsim.net/indicators/1512132" alt="VATSIM Indicator"/>
-      </div>
     </div>
   </div>
 </main>
