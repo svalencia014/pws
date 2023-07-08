@@ -4,6 +4,7 @@
 <a href="/vatsim" id="vatsim">VATSIM ATC</a>
 <a href="/contact" id="contact">Contact Me</a>
 <a href="/achievements" id="achievements">Achievements</a>
+<a href="/support" id="support">Support</a>
 <a href={"#"} class="icon" on:click={myFunction}>
   <FontAwesomeIcon class="fa-solid fa-bars" icon="bars" />
 </a>
