@@ -3,6 +3,9 @@
   import Navbar from '../../components/Navbar.svelte';
   import Footer from '../../components/Footer.svelte';
 </script>
+<svelte:head>
+  <title>Contact | Samuel V.</title>
+</svelte:head>
 <div class="topnav" id="myTopnav">
   <Navbar />
 </div>

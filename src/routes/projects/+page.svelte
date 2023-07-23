@@ -2,6 +2,9 @@
   import '../../app.css'
   import Navbar from "../../components/Navbar.svelte";
 </script>
+<svelte:head>
+  <title>Projects | Samuel V.</title>
+</svelte:head>
 <div class="topnav" id="myTopnav">
   <Navbar />
 </div>

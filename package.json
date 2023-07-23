@@ -21,6 +21,7 @@
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
 		"svelte": "^4.0.0",
+		"svelte-adapter-github": "^1.0.0-next.0",
 		"vite": "^4.3.6"
 	},
 	"type": "module",
@@ -31,5 +32,8 @@
 		"darkreader": "^4.9.58",
 		"fontawesome-svelte": "^2.0.1",
 		"svelte-fa": "^3.0.4"
+	},
+	"volta": {
+		"node": "20.5.0"
 	}
 }
