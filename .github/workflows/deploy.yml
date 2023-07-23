@@ -31,8 +31,8 @@ jobs:
         env:
           BASE_PATH: '/PWS'
         run: |
-          yarn
-          touch ./build/.nojekyll
+          yarn build
+          touch ./docs/.nojekyll
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
