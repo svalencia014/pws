@@ -25,13 +25,13 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: yarn
 
       - name: build
         env:
           BASE_PATH: '/PWS'
         run: |
-          npm run build
+          yarn
           touch ./build/.nojekyll
 
       - name: Upload Artifacts
