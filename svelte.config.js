@@ -1,13 +1,21 @@
-import adapter from '@sveltejs/adapter-static';
-
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
+// svelte.config.js
+import adapter from 'svelte-adapter-github';
+const dev = process.env.NODE_ENV === 'development';
+export default {
   kit: {
-    adapter: adapter(),
-    prerender: {
-      entries: ['*'],
-    },
-  },
+    adapter: adapter({
+      // default options are shown. On some platforms
+      // these options are set automatically — see below
+      pages: 'docs',
+			paths: {
+				base: dev ? '' : '/PWS',
+			},
+			appDir: 'internal',
+      assets: 'docs',
+      fallback: null,
+      precompress: false,
+      domain: '',
+      jekyll: false
+    })
+  }
 };
-
-export default config;
