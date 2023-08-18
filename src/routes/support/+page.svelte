@@ -10,7 +10,7 @@
   <Navbar />
 </div>
 <main>
-  <p>If you like my work and would like to support me, consider donating or hiring me through <a href="https://kofi.com/bifocalcanvas77">Ko-Fi</a>.</p>
+  <p>If you like my work and would like to support me, consider donating or hiring me through <a href="https://ko-fi.com/bifocalcanvas">Ko-Fi</a>.</p>
 </main>
 <hr>
 <footer>
