@@ -40,7 +40,7 @@
       </a>
     </div>
     <div class="socialElement">
-      <a href="https://ko-fi.com/bifocalcanvas77" target="blank"> 
+      <a href="https://ko-fi.com/bifocalcanvas" target="blank"> 
         <img src={kofi} alt="">
       </a>
     </div>
