@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Install yarn
-        run: volta install yarn@latest
+        run: npm i -g yarn
       - name: Pull repo
         run: cd /var/www/pws; git pull
       - name: Install dependencies
