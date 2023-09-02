@@ -10,7 +10,7 @@
   <Navbar />
 </div>
 <main>
-  <form method="post" action="http://api.svalencia.cf:4000/submit" name="contact-form">
+  <form method="post" action="http://api.svalencia.me:4000/submit" name="contact-form">
     <div>
       <label for="name">Name</label>
       <input type="text" name="name" id="name" required>
