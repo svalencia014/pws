@@ -9,8 +9,8 @@ jobs:
   build_site:
     runs-on: self-hosted
     steps:
-      - name: Debug
-        run: whoami
+      - name: Install yarn
+        run: volta install yarn@latest
       - name: Pull repo
         run: cd /var/www/pws; git pull
       - name: Install dependencies
