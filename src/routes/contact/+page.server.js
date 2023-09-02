@@ -11,7 +11,7 @@ export const actions = {
 
         const body = JSON.stringify({ email, message, name });
         console.log(body);
-        await fetch('https://api.svalencia.me/submit', {
+        await fetch('https://api.svalencia.me/submissions/new', {
             method: 'POST',
             mode: 'no-cors',
             headers: {
