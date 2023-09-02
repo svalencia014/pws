@@ -14,9 +14,9 @@ jobs:
       - name: Pull repo
         run: cd /var/www/pws; git pull
       - name: Install dependencies
-        run: yarn
+        run: cd /var/www/pws; yarn
       - name: Build website
-        run: yarn build
+        run: cd /var/www/pws; yarn build
       - name: Select Screen
         run: screen -x pws
       - name: Restart nodemon
