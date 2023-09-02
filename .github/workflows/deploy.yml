@@ -9,6 +9,8 @@ jobs:
   build_site:
     runs-on: self-hosted
     steps:
+      - name: Switch to my user
+        run: sudo su sam
       - name: Pull repo
         run: cd /var/www/pws; git pull
       - name: Install dependencies
