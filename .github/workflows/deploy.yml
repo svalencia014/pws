@@ -17,7 +17,5 @@ jobs:
         run: cd /var/www/pws; yarn
       - name: Build website
         run: cd /var/www/pws; yarn build
-      - name: Select Screen
-        run: screen -x pws
-      - name: Restart nodemon
-        run: rs
+      - name: Restart pm2
+        run: pm2 restart pws --update-env
