@@ -2,6 +2,11 @@
   import '../../app.css'
   import Navbar from '../../components/Navbar.svelte';
   import Footer from '../../components/Footer.svelte';
+  import { redirect } from '@sveltejs/kit';
+  import { useForm, validators, email, required } from 'svelte-use-form';
+  export let data;
+  /** @type {import('./$types').PageData} */
+  const form = useForm();
 </script>
 <svelte:head>
   <title>Contact | Samuel V.</title>
@@ -10,21 +15,21 @@
   <Navbar />
 </div>
 <main>
-  <form method="post" action="http://api.svalencia.me:4000/submit" name="contact-form">
+  <form use:form method="POST">
     <div>
       <label for="name">Name</label>
-      <input type="text" name="name" id="name" required>
+      <input type="text" name="name" id="name" use:validators={[required]}>
     </div>
     <div>
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" required>
+      <input type="email" name="email" id="email" use:validators={[email, required]}>
     </div>
     <div>
       <label for="message">Message</label>
-      <textarea name="message" id="message" rows="10" cols="30" required></textarea>
+      <textarea name="message" id="message" rows="10" cols="30" use:validators={[required]}></textarea>
     </div>
     <div>
-      <input type="submit" value="Submit">
+      <button disabled={!$form.valid} type="submit">Submit</button>
     </div>
   </form>
   <hr>
