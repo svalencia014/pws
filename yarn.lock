@@ -2379,6 +2379,7 @@ __metadata:
     svelte: ^4.0.0
     svelte-adapter-github: ^1.0.0-next.0
     svelte-fa: ^3.0.4
+    svelte-use-form: ^2.9.1
     vite: ^4.3.6
   languageName: unknown
   linkType: soft
@@ -2717,6 +2718,15 @@ __metadata:
   peerDependencies:
     svelte: ^3.19.0 || ^4.0.0
   checksum: 09518aad14288b15e723e69376d2044330f52f49c2730a5e1357b4bee5928c04c5e4022f713856f51ef08ccf3fb5639e870ac89a44c0cb573cedf395017e2402
+  languageName: node
+  linkType: hard
+
+"svelte-use-form@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "svelte-use-form@npm:2.9.1"
+  peerDependencies:
+    svelte: ">=3.46.0 < 5"
+  checksum: de649900c6bf4e6d112a0ffb1052bbeff80c9450d820606672697d0a31e7fce23c08544f8d38712cc4e59e5a08d1518bd5581223ecf76001a4b045eefa684fbe
   languageName: node
   linkType: hard
 
