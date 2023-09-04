@@ -30,7 +30,7 @@
       </a>
     </div>
     <div class="socialElement">
-      <a href="https://youtube.com/channel/@bifocalcanvas" target="_blank">
+      <a href="https://youtube.com/@bifocalcanvas" target="_blank">
         <Fa icon={faYoutube} class="fa-brands fa-youtube fa-3x"/>
       </a>
     </div>
