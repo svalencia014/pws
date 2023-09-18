@@ -1,5 +1,5 @@
 <a href="/" class="active" id="index">Samuel Valencia</a>
-<a href="/social" id="social">My Socials</a>
+<a href="/socials" id="social">My Socials</a>
 <a href="/projects" id="projects">Projects</a>
 <a href="/vatsim" id="vatsim">VATSIM ATC</a>
 <a href="/contact" id="contact">Contact Me</a>
