@@ -9,13 +9,7 @@ jobs:
   build_site:
     runs-on: self-hosted
     steps:
-      - name: Install yarn
-        run: npm i -g yarn
-      - name: Pull repo
-        run: cd /var/www/pws; git pull
-      - name: Install dependencies
-        run: cd /var/www/pws; yarn
-      - name: Build website
-        run: cd /var/www/pws; yarn build
-      - name: Restart pm2
-        run: pm2 restart pws --update-env
+      - name: Setup
+        uses: actions/checkout@v2
+      - name: Deploy
+        run: docker compose up --build -d
