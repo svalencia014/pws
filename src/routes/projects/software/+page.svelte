@@ -10,29 +10,50 @@
   <Navbar />
 </div>
 <main>
-  <p>Below are links to all of my software development projects in chronological order.</p>
-  <div class="links">
-    <div class="cards">
-      <a href="https://svalencia014.github.io/DarkgreenForthrightFirewall/" class="card" target="_blank">
-        <h3>Vote for Jazmyne</h3>
-        <p>A joke website made for a friend in 7th grade.</p>
-      </a>
-      <a href="https://codeprojects.org/0LphTJlwyW0RJQ23SHZoWAyXs0NNbaA5O0ZzSUXqfUw/index.html" class="card" target="_blank">
-        <h3>Personal Website Project</h3>
-        <p>One of the code.org projects I did in 8th Grade CS.</p>
-      </a>
-      <a href="https://github.com/svalencia014/FSCalculations" class="card" target="_blank">
-        <h3>Flight Sim Fuel Calculator</h3>
-        <p>A personal project I did for fun in 8th Grade.</p>
-      </a>
-      <a href="https://github.com/svalencia014/schoolBot" class="card" target="_blank">
-        <h3>School Discord Bot</h3>
-        <p>A discord bot I made for a school discord server in 9th Grade.</p>
-      </a>
-      <a href="https://github.com/svalencia014/openscopeCoordinateConverter" class="card" target="_blank">
-        <h3>OpenScope Coordinate Converter</h3>
-        <p>Tool that converts VRC coordinates to the format used by Openscope</p>
-      </a>
+  <div id="myProj">
+    <p class="text-center pt-3">Below are links to all of the development projects I've done.</p>
+    <div class="links">
+      <div class="cards">
+        <a href="https://svalencia014.github.io/DarkgreenForthrightFirewall/" class="card" target="_blank">
+          <h3>Vote for Jazmyne</h3>
+          <p>A joke website made for a friend in 7th grade.</p>
+        </a>
+        <a href="https://codeprojects.org/0LphTJlwyW0RJQ23SHZoWAyXs0NNbaA5O0ZzSUXqfUw/index.html" class="card" target="_blank">
+          <h3>Personal Website Project</h3>
+          <p>One of the code.org projects I did in 8th Grade CS.</p>
+        </a>
+        <a href="https://github.com/svalencia014/FSCalculations" class="card" target="_blank">
+          <h3>Flight Sim Fuel Calculator</h3>
+          <p>A personal project I did for fun in 8th Grade.</p>
+        </a>
+        <a href="https://github.com/svalencia014/schoolBot" class="card" target="_blank">
+          <h3>School Discord Bot</h3>
+          <p>A discord bot I made for a school discord server in 9th Grade.</p>
+        </a>
+        <a href="https://github.com/svalencia014/openscopeCoordinateConverter" class="card" target="_blank">
+          <h3>OpenScope Coordinate Converter</h3>
+          <p>Tool that converts VRC coordinates to the format used by Openscope.</p>
+        </a>
+        <a href="https://github.com/svalencia014/VRCGame" class="card" target="_blank">
+          <h3>VrcGame</h3>
+          <p>A game utilizing VRC as the UI.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="foss">
+    <p class="text-center">Below are links to all of the open source projects I've contributed to.</p>
+    <div class="links">
+      <div class="cards">
+        <a href="https://github.com/openscope/openscope" class="card" target="_blank"> 
+          <h3>Openscope</h3>
+          <p>openScope Air Traffic Control Simulator</p>
+        </a>
+        <a href="https://github.com/mmp/vice" class="card" target="_blank">
+          <h3>Vice ATC Simulator</h3>
+          <p>Vrtual air traffic control simulator</p>
+        </a>
+      </div>
     </div>
   </div>
 </main>
