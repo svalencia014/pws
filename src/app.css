@@ -103,7 +103,8 @@ iframe {
 }
 .card, .nocard {
   padding: 1rem;
-  width: 150px;
+  width: 160px;
+  height: 160px;
   text-align: center;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -137,12 +138,12 @@ iframe {
   height: 250px;
 }
 .card > h3 {
-  font-size: 1.25rem;
+  font-size: 75%;
   margin: 0;
   font-family: "Bebas Neue", "cursive";
 }
 .card > p {
-  font-size: 1rem;
+  font-size: 75%;
   margin: 0;
 }
 .links {
@@ -182,6 +183,9 @@ iframe {
 .banners img {
   width: 23rem;
 }
+
+@media only screen and ()
+
 @media only screen and (max-width: 1110px) {
   .banners {
     grid-template-columns: auto auto;
