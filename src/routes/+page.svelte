@@ -14,7 +14,7 @@
   <Navbar />
 </div>
 <main>
-  <p>
+  <p class="text-center py-5">
     Student learning computer science, YouTube content creator, and Virtual Air Traffic Controller
   </p>
   <hr>

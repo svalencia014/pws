@@ -103,8 +103,6 @@ iframe {
 }
 .card, .nocard {
   padding: 1rem;
-  width: 160px;
-  height: 160px;
   text-align: center;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -112,6 +110,8 @@ iframe {
 }
 .card {
   border: 1px solid #f4c5b4;
+  width: 160px;
+  height: 160px;
   border-radius: .25rem;
 }
 .videocard {
@@ -184,21 +184,35 @@ iframe {
   width: 23rem;
 }
 
-@media only screen and ()
+@media only screen and (min-width: 1035px) {
+  .cards {
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+}
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 700px) {
+  .cards {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 545px) {
   .banners {
     grid-template-columns: auto auto;
     grid-gap: 3rem;
   }
+  .cards {
+    grid-template-columns: auto auto;
+  }
 }
+
 @media only screen and (max-width: 855px) {
   .banners {
     grid-template-columns: auto;
     grid-gap: 1rem;
   }
 }
-@media only screen and (max-width: 545px) {
+@media only screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon, .fa-bars {
     float: right;
@@ -218,8 +232,7 @@ iframe {
     text-align: left;
   }
   .cards {
-    display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 1rem;
   }
   .videocard {
@@ -254,7 +267,6 @@ iframe {
   }
   .links {
     display: flex;
-    justify-content: left;
     align-items: left;
     margin: 5px;
     width: 100%
@@ -276,7 +288,6 @@ label {
 
 input, textarea {
   width: 90%;
-  padding: 10px;
   border: 1px solid #ccc;
   outline: none;
 }
