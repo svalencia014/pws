@@ -19,12 +19,12 @@
           <p>A personal project I did for fun in 8th Grade.</p>
         </a>
         <a href="https://github.com/svalencia014/openscopeCoordinateConverter" class="card" target="_blank">
-          <h3>OpenScope Coordinate Converter</h3>
+          <h3>OpenScope Coord Converter</h3>
           <p>Tool that converts VRC coordinates to the format used by Openscope.</p>
         </a>
-        <a href="https://github.com/svalencia014/VRCGame" class="card" target="_blank">
-          <h3>VrcGame</h3>
-          <p>A game utilizing VRC as the UI.</p>
+        <a href="https://github.com/svalencia014/cidersteelseries" class="card" target="_blank">
+          <h3>Cider Steelseries</h3>
+          <p>Shows now playing info from Cider on a Steelseries OLED display</p>
         </a>
       </div>
     </div>

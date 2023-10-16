@@ -1,4 +1,4 @@
-export async function load({ params }) {
+export async function load() {
   let languages = [
     {
       name: 'JavaScript',
@@ -14,6 +14,10 @@ export async function load({ params }) {
     },
     {
       name: "Python",
+      projects: 0
+    },
+    {
+      name: "Go",
       projects: 0
     }
   ]
@@ -41,7 +45,7 @@ export async function load({ params }) {
 }
 
 async function getLanguageData(language) {
-  let res = await fetch(`https://api.svalencia.me/github/languages/${language}`)
+  let res = await fetch(`https://api.svalencia.me/languages/${language}`)
   let data = await res.json()
   return data.projects;
 }
