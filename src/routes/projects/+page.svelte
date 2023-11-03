@@ -11,8 +11,8 @@
 </div>
 <main>
   <div id="myProj">
-    <p class="text-center pt-3">Below are links to all of the development projects I've done.</p>
-    <div class="links">
+    <p class="text-center pt-6">Below are links to all of the development projects I've done.</p>
+    <div class="links pt-3">
       <div class="cards">
         <a href="https://github.com/svalencia014/FSCalculations" class="card" target="_blank">
           <h3>Flight Sim Fuel Calculator</h3>
@@ -30,8 +30,8 @@
     </div>
   </div>
   <div id="foss">
-    <p class="text-center">Below are links to all of the open source projects I've contributed to.</p>
-    <div class="links">
+    <p class="text-center pt-6">Below are links to all of the open source projects I've contributed to.</p>
+    <div class="links pt-3">
       <div class="cards">
         <a href="https://github.com/openscope/openscope" class="card" target="_blank"> 
           <h3>Openscope</h3>
