@@ -1,6 +1,5 @@
 <script>
   import Navbar from "../components/Navbar.svelte";
-  import Footer from "../components/Footer.svelte";
 </script>
 <svelte:head>
   <style>
@@ -9,7 +8,6 @@
   </style>
   <title>Samuel V.</title>
 </svelte:head>
-
 <div class="topnav" id="myTopnav">
   <Navbar />
 </div>
@@ -32,6 +30,3 @@
     </div>
   </div>
 </main>
-<footer>
-  <Footer />
-</footer>
