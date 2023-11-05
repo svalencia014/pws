@@ -13,7 +13,7 @@
 </div>
 <main>
   <p class="text-center py-5">
-    Student learning computer science, YouTube content creator, and Virtual Air Traffic Controller
+    Programmer, Content Creator, EAS/Radio Enthusiast, Alternative and Country enjoyer from Indianapolis, IN
   </p>
   <hr>
   <div class="links">

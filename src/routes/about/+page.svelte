@@ -19,13 +19,13 @@
     <br>
     <br>
     I have been programming for about 4 years now, with my first language being python, mainly to automate tasks or mess around 
-    with friends. In 2021, I learned Javascript and in 2023, I learned typescript and svelte. My main stack currently is sveltekit
-    for front end work and typescript for backend work or any nodejs project. I'm also familiar with Go and Rust, although I don't
-    know as much as I do in JS and TS. I have also used tauri for a few projects, mainly since it's easy to create a UI with it. 
+    with friends. In 2021, I learned JavaScript and in 2023, I learned TypeScript and Svelte. My main stack currently is SvelteKit
+    for frontend work and typescript for backend work or any Node.js project. I'm also familiar with Go and Rust, although I don't
+    know as much as I do in JS and TS. I have also used Tauri for a few projects, mainly since it's easy to create a UI with it. 
     <br>
     <br>
     Outside of school and programming, I like to play video games <i>(Which I usually post on YouTube found on my <a href="/socials">socials</a> page)</i>, 
-    take pictures, and do <a href="/vatsim">Virtual Air Traffic Controlling</a>. I also have found an interest in horseback riding 
+    take pictures, and do <i><a href="/vatsim">Virtual Air Traffic Controlling</a></i>. I also have found an interest in horseback riding 
     <i>(I'm from Indiana, what did you expect)</i>, although I don't do it as much as I would like to. 
   </p>
 </main>
