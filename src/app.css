@@ -324,3 +324,7 @@ button[type="submit"] {
   width: 90%;
   height: 50%;
 }
+.compressed {
+  width: 90%;
+  padding-left: 10%;
+}

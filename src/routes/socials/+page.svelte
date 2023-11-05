@@ -1,6 +1,5 @@
 <script>
   import Navbar from "../../components/Navbar.svelte";
-  import Footer from "../../components/Footer.svelte";
   import Fa from 'svelte-fa/src/fa.svelte';
   import { faTwitter, faTwitch, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons';
   import kofi from '../../images/kofi.png'
@@ -46,6 +45,3 @@
     </div>
   </div>
 </main>
-<footer>
-  <Footer />
-</footer>

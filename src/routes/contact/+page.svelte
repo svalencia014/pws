@@ -1,7 +1,6 @@
 <script>
   import '../../app.css'
   import Navbar from '../../components/Navbar.svelte';
-  import Footer from '../../components/Footer.svelte';
   import { redirect } from '@sveltejs/kit';
   import { useForm, validators, email, required } from 'svelte-use-form';
   export let data;
@@ -37,6 +36,3 @@
     </form>
   </div>
 </main>
-<footer>
-  <Footer />
-</footer>
