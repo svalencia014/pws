@@ -25,7 +25,6 @@ export async function load() {
     let i = 0;
     for (i = 0; i < languages.length; i++) {
       languages[i].projects = await getLanguageData(languages[i].name)
-      console.log(`${languages[i].name}: ${languages[i].projects}`)
     }
     if (i != languages.length) {
       reject('Error loading languages')
@@ -35,7 +34,6 @@ export async function load() {
   }
   async function main() {
     await new Promise((resolve, reject) => loadLanguages(resolve, reject))
-    console.log(languages);
     return languages;
   }
   await main()

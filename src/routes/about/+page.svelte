@@ -1,7 +1,6 @@
 <script>
   import "../../app.css"
   import Navbar from "../../components/Navbar.svelte";
-  export let data;
 </script>
 <svelte:head>
   <title>About | Samuel V.</title>
@@ -9,31 +8,24 @@
 <div class="topnav" id="myTopnav">
   <Navbar />
 </div>
-<main style="text-align: center;">
-  <p class="pt-2">I am a high school student from Indianapolis, IN who is currently studying to become a software engineer.</p>
-  <p class="pb-2">I also am studying media production and produce content for my school's news.</p>
+<main class="pt-3">
+  <h1 class="text-3xl text-center pb-2">About Me</h1>
   <hr>
-  <h1 class="text-3xl pt-4">Skills</h1>
-  <div class="links">
-    <div class="cards">
-      {#each data.languages as language}
-        {#if language.projects == 0}
-          <div class="card">
-            <h1>{language.name}</h1>
-            <p>No Public Projects <i>yet</i></p>
-          </div>
-        {:else if language.projects == 1}
-          <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
-            <h1>{language.name}</h1>
-            <p>{language.projects} public project</p>
-          </a>
-        {:else}
-        <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
-          <h1>{language.name}</h1>
-          <p>{language.projects} public projects</p>
-        </a>
-        {/if}
-      {/each}
-    </div>
-  </div>
+  <p class="pt-2 compressed align-middle">
+    I am a high school student from Indianapolis, IN who is currently studying to become a software engineer. I am currently
+    looking for freelance opportunities to help increase my experience in the field while also helping to get me on my feet
+    after I finish high school. My end goal is to end up living in rural Indiana, preferably in the southern part of the state,
+    doing work remotely with a side hustle of horse farming (which is really profitable in Indiana).
+    <br>
+    <br>
+    I have been programming for about 4 years now, with my first language being python, mainly to automate tasks or mess around 
+    with friends. In 2021, I learned JavaScript and in 2023, I learned TypeScript and Svelte. My main stack currently is SvelteKit
+    for frontend work and typescript for backend work or any Node.js project. I'm also familiar with Go and Rust, although I don't
+    know as much as I do in JS and TS. I have also used Tauri for a few projects, mainly since it's easy to create a UI with it. 
+    <br>
+    <br>
+    Outside of school and programming, I like to play video games <i>(Which I usually post on YouTube found on my <a href="/socials">socials</a> page)</i>, 
+    take pictures, and do <i><a href="/vatsim">Virtual Air Traffic Controlling</a></i>. I also have found an interest in horseback riding 
+    <i>(I'm from Indiana, what did you expect)</i>, although I don't do it as much as I would like to. 
+  </p>
 </main>

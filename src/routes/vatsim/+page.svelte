@@ -10,7 +10,7 @@
   <Navbar />
 </div>
 <main>
-  <p>Virtual Air Traffic Simulation (VATSIM) Network is a nonprofit organization that operates an online flight-simulation network noted for its realism.</p>
+  <p>The Virtual Air Traffic Simulation (VATSIM) Network is a nonprofit organization that operates an online flight-simulation network noted for its realism.</p>
   <p>I control ZJX (Jacksonville), ZHU (Houston), ZID (Indianapolis) on the VATSIM Network</p>
   <p>Here are some of my favorite VATSIM timelapse videos:</p>
   <div class="links">

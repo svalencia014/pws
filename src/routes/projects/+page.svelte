@@ -2,6 +2,7 @@
   import '../../app.css'
 	import Footer from '../../components/Footer.svelte';
   import Navbar from '../../components/Navbar.svelte';
+  export let data;
 </script>
 <svelte:head>
   <title>Software Projects | Samuel V.</title>
@@ -10,9 +11,9 @@
   <Navbar />
 </div>
 <main>
-  <div id="myProj">
-    <p class="text-center pt-3">Below are links to all of the development projects I've done.</p>
-    <div class="links">
+  <div id="myProj" class="pb-5">
+    <p class="text-center pt-6">Here are some of the best projects I've done throughout the years.</p>
+    <div class="links pt-3">
       <div class="cards">
         <a href="https://github.com/svalencia014/FSCalculations" class="card" target="_blank">
           <h3>Flight Sim Fuel Calculator</h3>
@@ -29,9 +30,10 @@
       </div>
     </div>
   </div>
-  <div id="foss">
-    <p class="text-center">Below are links to all of the open source projects I've contributed to.</p>
-    <div class="links">
+  <hr>
+  <div class="pb-5" id="foss">
+    <p class="text-center pt-6">Here are some open source projects I've contributed to.</p>
+    <div class="links pt-3">
       <div class="cards">
         <a href="https://github.com/openscope/openscope" class="card" target="_blank"> 
           <h3>Openscope</h3>
@@ -44,7 +46,30 @@
       </div>
     </div>
   </div>
+  <hr>
+  <div id="skills">
+    <p class="text-center pt-6">Here are some of the languages I've used for public projects.</p>
+    <div class="links pt-3">
+      <div class="cards">
+        {#each data.languages as language}
+          {#if language.projects == 0}
+            <div class="card">
+              <h1>{language.name}</h1>
+              <p>No Public Projects <i>yet</i></p>
+            </div>
+          {:else if language.projects == 1}
+            <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
+              <h1>{language.name}</h1>
+              <p>{language.projects} public project</p>
+            </a>
+          {:else}
+            <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
+              <h1>{language.name}</h1>
+              <p>{language.projects} public projects</p>
+            </a>
+          {/if}
+        {/each}
+      </div>
+    </div>
+  </div>
 </main>
-<footer>
-  <Footer />
-</footer>
