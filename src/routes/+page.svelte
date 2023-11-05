@@ -32,7 +32,6 @@
     </div>
   </div>
 </main>
-<hr>
 <footer>
   <Footer />
 </footer>

@@ -16,9 +16,9 @@
 <div class="topnav" id="myTopnav">
   <Navbar />
 </div>
-<main>
-  <p>Here are links to my socials</p>
-  <div class="socialRow">
+<main>  
+  <p class="text-center py-5">Here are links to my socials</p>
+  <div class="socialRow place-content-center">
     <div class="socialElement">
       <a href="https://twitter.com/bifocalcanvas" target="_blank">
         <Fa icon={faTwitter} class="fa-brands fa-twitter fa-3x"/>
@@ -46,7 +46,6 @@
     </div>
   </div>
 </main>
-<hr>
 <footer>
   <Footer />
 </footer>

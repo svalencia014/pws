@@ -1,9 +1,8 @@
 <a href="/" class="active" id="index">Samuel Valencia</a>
-<a href="/socials" id="social">My Socials</a>
-<a href="/projects" id="projects">Projects</a>
-<a href="/vatsim" id="vatsim">VATSIM ATC</a>
-<a href="/contact" id="contact">Contact Me</a>
 <a href="/about" id="about">About Me</a>
+<a href="/contact" id="contact">Contact Me</a>
+<a href="/projects" id="projects">Projects</a>
+<a href="/socials" id="socials">My Socials</a>
 <a href={"#"} class="icon" on:click={myFunction}>
   <FontAwesomeIcon class="fa-solid fa-bars" icon="bars" />
 </a>
