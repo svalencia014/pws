@@ -18,6 +18,8 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
+		"flowbite": "^3.1.1",
+		"flowbite-svelte": "^0.47.4",
 		"gh-pages": "^3.0.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
