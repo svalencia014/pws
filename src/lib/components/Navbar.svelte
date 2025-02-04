@@ -14,5 +14,8 @@
     <NavLi class="text-xl font-bebas-neue" href="/about">About</NavLi>
     <NavLi class="text-xl font-bebas-neue" href="/contact">Contact Me</NavLi>
     <NavLi class="text-xl font-bebas-neue" href="/pictures">Pictures</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/projects">Projects</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/socials">Socials</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/vatsim">VATSIM</NavLi>
   </NavUl>
 </Navbar>

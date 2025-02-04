@@ -23,10 +23,10 @@ model Submission {
   @@map("submissions")
 }
 
-model Project {
+model Language {
   name String @id @unique
   projects Int @default(0)
   lastFetched DateTime @default(now()) @map("last_fetched")
 
-  @@map("projects")
+  @@map("languages")
 }

@@ -7,7 +7,7 @@ export const load: PageServerLoad = async () => {
   let pageData = new PageData();
   for (let i = 0; i < pageData.languages.length; i++) {
     const language = pageData.languages[i];
-    let projects = await prisma.project.findFirst({
+    let projects = await prisma.language.findFirst({
       where: {
         name: language.name
       }
@@ -16,7 +16,7 @@ export const load: PageServerLoad = async () => {
       //@ts-expect-error - not returning like it wants
       projects = await getFromGithub(language.name);
       projects.lastFetched = new Date();
-      await prisma.project.create({
+      await prisma.language.create({
         data: projects
       })
     }
@@ -25,7 +25,7 @@ export const load: PageServerLoad = async () => {
       //@ts-expect-error - not returning like it wants
       projects = await getFromGithub(language.name);
       projects.lastFetched = new Date();
-      await prisma.project.create({
+      await prisma.language.create({
         data: projects
       })
     }
