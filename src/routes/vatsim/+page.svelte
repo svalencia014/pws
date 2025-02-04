@@ -1,14 +1,9 @@
 <script>
-  import '../../app.css'
-  import Navbar from '../../components/Navbar.svelte';
-  import Footer from '../../components/Footer.svelte';
 </script>
 <svelte:head>
   <title>VATSIM | Samuel V.</title>
 </svelte:head>
-<div class="topnav" id="myTopnav">
-  <Navbar />
-</div>
+
 <main>
   <p>The Virtual Air Traffic Simulation (VATSIM) Network is a nonprofit organization that operates an online flight-simulation network noted for its realism.</p>
   <p>I control ZJX (Jacksonville), ZHU (Houston), ZID (Indianapolis) on the VATSIM Network</p>
@@ -34,6 +29,3 @@
   </div>
   <hr/>
 </main>
-<footer>
-  <Footer />
-</footer>

@@ -1,9 +1,7 @@
 <script>
-  import Navbar from "../../components/Navbar.svelte";
   import Fa from 'svelte-fa/src/fa.svelte';
   import { faTwitter, faTwitch, faYoutube, faDiscord, faLastfmSquare } from '@fortawesome/free-brands-svg-icons';
   import kofi from '../../images/kofi.png'
-  import '../../app.css'
 </script>
 <svelte:head>
   <style>
@@ -12,9 +10,7 @@
   </style>
   <title>Social Media | Samuel V.</title>
 </svelte:head>
-<div class="topnav" id="myTopnav">
-  <Navbar />
-</div>
+
 <main>  
   <p class="text-center py-5">Here are links to my socials</p>
   <div class="socialRow place-content-center">
