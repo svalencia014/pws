@@ -1,6 +1,6 @@
 <script lang="ts">
   import { useForm, validators, email, required } from 'svelte-use-form';
-  export let data;
+  let { data } = $props();
   const form = useForm();
 </script>
 

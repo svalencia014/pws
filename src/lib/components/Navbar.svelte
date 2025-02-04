@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from "$app/stores";
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-  $: activeUrl = $page.url.pathname;
+  let activeUrl = $derived($page.url.pathname);
 </script>
 
 <Navbar class="bg-white">
