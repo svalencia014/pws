@@ -14,7 +14,7 @@
     <Navbar/>
   </div>
 
-  <main class="font-stick-no-bills flex-col items-center justify-center pt-3 text-orange-400">
+  <main class="font-stick-no-bills flex-col items-center justify-center text-center pt-3 text-orange-400">
     {@render children?.()}
   </main>
 

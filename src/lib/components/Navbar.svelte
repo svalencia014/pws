@@ -13,5 +13,6 @@
     <NavLi class="text-xl font-bebas-neue" href="/">Home</NavLi>
     <NavLi class="text-xl font-bebas-neue" href="/about">About</NavLi>
     <NavLi class="text-xl font-bebas-neue" href="/contact">Contact Me</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/pictures">Pictures</NavLi>
   </NavUl>
 </Navbar>

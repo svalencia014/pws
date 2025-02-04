@@ -17,10 +17,15 @@ COPY . .
 # Leverage a cache mount to /root/.yarn to speed up subsequent builds.
 # Leverage a bind mounts to package.json and yarn.lock to avoid having to copy them into
 # into this layer.
-RUN yarn install
+
+RUN npm i -g pnpm prisma
+
+RUN prisma generate
+
+RUN pnpm i
 
 # Compile
-RUN yarn build
+RUN pnpm build
 
 # Run the application as a non-root user.
 USER node
