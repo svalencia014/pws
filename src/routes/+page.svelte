@@ -4,7 +4,7 @@
 </svelte:head>
 
 <main>
-  <p class="text-center py-5">
+  <p class="text-center py-5 text-orange-400">
     Programmer, Content Creator, EAS/Radio Enthusiast, Alternative and Country enjoyer from Indianapolis, IN
   </p>
   <hr>

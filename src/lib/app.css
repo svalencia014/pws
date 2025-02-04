@@ -37,10 +37,7 @@ a {
 .footer {
   color: #ecbebe;
 }
-.heading,
-main {
-  color: #f5821f;
-}
+
 td {
   border-style: solid;
   border-width: 2px;
@@ -50,14 +47,8 @@ li {
   color: #ecbebe;
   font-family: "Bebas Neue", "cursive";
 }
-ul {
-  list-style-type: square;
-}
 p, form {
   font-family: "Stick No Bills", sans-serif;
-  font-size: 20px;
-}
-.links {
   font-size: 20px;
 }
 .form {
