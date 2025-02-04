@@ -1,18 +1,13 @@
-<script>
-  import '../../app.css'
-  import Navbar from '../../components/Navbar.svelte';
-  import { redirect } from '@sveltejs/kit';
+<script lang="ts">
   import { useForm, validators, email, required } from 'svelte-use-form';
   export let data;
-  /** @type {import('./$types').PageData} */
   const form = useForm();
 </script>
+
 <svelte:head>
   <title>Contact | Samuel V.</title>
 </svelte:head>
-<div class="topnav" id="myTopnav">
-  <Navbar />
-</div>
+
 <main>
   <div class="py-3">
     <form use:form method="POST">

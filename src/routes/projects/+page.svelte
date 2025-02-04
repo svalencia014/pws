@@ -1,15 +1,12 @@
-<script>
-  import '../../app.css'
-	import Footer from '../../components/Footer.svelte';
-  import Navbar from '../../components/Navbar.svelte';
+<script lang="ts">
   export let data;
+  console.log(data.pageData);
 </script>
+
 <svelte:head>
   <title>Software Projects | Samuel V.</title>
 </svelte:head>
-<div class="topnav" id="myTopnav">
-  <Navbar />
-</div>
+
 <main>
   <div id="myProj" class="pb-5">
     <p class="text-center pt-6">Here are some of the best projects I've done throughout the years.</p>
@@ -51,21 +48,16 @@
     <p class="text-center pt-6">Here are some of the languages I've used for public projects.</p>
     <div class="links pt-3">
       <div class="cards">
-        {#each data.languages as language}
+        {#each data.pageData.languages as language}
           {#if language.projects == 0}
             <div class="card">
               <h1>{language.name}</h1>
               <p>No Public Projects <i>yet</i></p>
             </div>
-          {:else if language.projects == 1}
-            <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
-              <h1>{language.name}</h1>
-              <p>{language.projects} public project</p>
-            </a>
           {:else}
             <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="card" target="_blank">
               <h1>{language.name}</h1>
-              <p>{language.projects} public projects</p>
+              <p>{language.projects} {language.projects == 1 ? "public project" : "public projects"}</p>
             </a>
           {/if}
         {/each}
