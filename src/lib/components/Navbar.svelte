@@ -5,11 +5,13 @@
 </script>
 
 <Navbar color="none" class="bg-stone-700">
-  <NavBrand class="text-white" href="/">
+  <NavBrand class="text-white text-2xl font-bebas-neue" href="/">
     <p>Samuel Valencia</p>
   </NavBrand>
   <NavHamburger />
   <NavUl {activeUrl}>
-    <NavLi class="font-xl" href="/">Home</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/">Home</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/about">About</NavLi>
+    <NavLi class="text-xl font-bebas-neue" href="/contact">Contact Me</NavLi>
   </NavUl>
 </Navbar>

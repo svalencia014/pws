@@ -1,12 +1,14 @@
 import type { Config } from 'tailwindcss';
 
 import flowbitePlugin from "flowbite/plugin";
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      cursive: ["Bebas Neue", "cursive"],
+      "bebas-neue": ["Bebas Neue"],
+      "stick-no-bills": ["Stick No Bills", ...defaultTheme.fontFamily.sans],
     },
     extend: {
       colors: {
