@@ -10,12 +10,12 @@
 </div>
 <div class="flex m-1 justify-center">
   <div class="p-1 text-center">
-    <img class="h-52" src="https://github-readme-stats-svalencia014.vercel.app/api?username=svalencia014&show_icons=true&theme=dracula" alt="GitHub Stats"/>
+    <img width="312px" src="https://ghs.svalencia.me/?username=svalencia014&show_icons=true&theme=dracula&card_width=312" alt="GitHub Stats"/>
   </div>
   <div class="p-1 text-center">
-    <img class="h-52" src="https://github-readme-stats-svalencia014.vercel.app/api/top-langs?username=svalencia014&theme=dracula&layout=compact" alt="Used Languages"/>
+    <img width="312px" src="https://ghs.svalencia.me/top-langs?username=svalencia014&theme=dracula&layout=donut&card_width=312" alt="Used Languages"/>
   </div>
   <div class="p-1 text-center">
-    <img class="h-52" src="https://github-readme-streak-stats.herokuapp.com?user=svalencia014&theme=dracula" alt="GitHub streak stats"/>
+    <img fetchpriority="high" width="312px" src="https://streak-stats.demolab.com?user=svalencia014&theme=dracula" alt="GitHub streak stats" />
   </div>
 </div>
