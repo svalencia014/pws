@@ -1,7 +1,10 @@
 <script lang="ts">
-	import { page } from "$app/state";
+  import { page } from "$app/state";
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-  let activeUrl = page.url.pathname;
+  let activeUrl = $state(page.url.pathname);
+  $effect(() => {
+    activeUrl = page.url.pathname;
+  });
 </script>
 
 <Navbar color="none" class="bg-stone-700">
