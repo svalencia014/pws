@@ -7,17 +7,16 @@ export const load: PageServerLoad = async () => {
   let pageData = new PageData();
   for (let i = 0; i < pageData.languages.length; i++) {
     const language = pageData.languages[i];
-    console.log(language);
     let projects = await prisma.language.findFirst({
       where: {
-        name: language.name.toLowerCase()
+        name: language.name
       }
     })
 
+    // If project doesn't exist
     if (projects == null) {
       //@ts-expect-error - not returning like it wants
       projects = await getFromGithub(language.name);
-      projects.lastFetched = new Date();
       await prisma.language.create({
         data: projects
       })
@@ -26,8 +25,10 @@ export const load: PageServerLoad = async () => {
     if (projects.lastFetched.getTime() < Date.now() - 1000 * 60 * 60) { // 1 hour
       //@ts-expect-error - not returning like it wants
       projects = await getFromGithub(language.name);
-      projects.lastFetched = new Date();
-      await prisma.language.create({
+      await prisma.language.update({
+        where: {
+          name: language.name
+        },
         data: projects
       })
     }
@@ -88,7 +89,8 @@ async function getFromGithub(language: string): Promise<Language> {
   }
   return {
     name: language,
-    projects: results
+    projects: results,
+    lastFetched: new Date()
   };
 }
 
@@ -124,23 +126,23 @@ class PageData {
   constructor() {
     this.languages = [
       {
-        name: 'JavaScript',
+        name: 'javascript',
         projects: 0
       },
       {
-        name: 'Typescript',
+        name: 'typescript',
         projects: 0
       },
       {
-        name: 'Svelte',
+        name: 'svelte',
         projects: 0,
       },
       {
-        name: "Python",
+        name: "python",
         projects: 0
       },
       {
-        name: "Go",
+        name: "go",
         projects: 0
       }
     ];
@@ -150,4 +152,5 @@ class PageData {
 type Language = {
   name: string;
   projects: number;
+  lastFetched?: Date;
 }
