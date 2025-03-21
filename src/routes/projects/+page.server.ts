@@ -7,11 +7,13 @@ export const load: PageServerLoad = async () => {
   let pageData = new PageData();
   for (let i = 0; i < pageData.languages.length; i++) {
     const language = pageData.languages[i];
+    console.log(language);
     let projects = await prisma.language.findFirst({
       where: {
-        name: language.name
+        name: language.name.toLowerCase()
       }
     })
+
     if (projects == null) {
       //@ts-expect-error - not returning like it wants
       projects = await getFromGithub(language.name);
