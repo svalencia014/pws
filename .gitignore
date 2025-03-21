@@ -14,3 +14,7 @@ vite.config.ts.timestamp-*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
