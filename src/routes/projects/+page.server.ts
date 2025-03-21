@@ -45,7 +45,7 @@ async function getFromGithub(language: string): Promise<Language> {
   const req = await fetch('https://api.github.com/graphql', {
     method: "POST",  
     headers: {
-      "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`
+      "Authorization": `Bearer ${process.env.GH_TOKEN}`
     },
     body: JSON.stringify({
       query: `query userInfo($login: String!) {
