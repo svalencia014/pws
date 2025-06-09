@@ -9,7 +9,7 @@
   <div class="compressed">
     <p class="py-1">
       I am a high school student from Indianapolis, IN who is currently studying to become a software engineer, although 
-      I may switch majors to Agricutlure. I am currently employed part time for U-Haul as a CSR and at my friend's company 
+      I may switch majors to Agricutlure. I am currently employed part time for U-Haul as a Reservation Manager and at my company 
       H2 Technologies as the COO. My end goal is to end up living in rural Indiana, preferably in the southern part of the state,
       doing running a farming operation of my own that I may pass down my family.
     </p>
