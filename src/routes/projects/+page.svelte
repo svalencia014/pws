@@ -10,10 +10,6 @@
   <p class="text-center pt-6 text-xl">Here are some of the best projects I've done throughout the years.</p>
   <div class="flex justify-center align-middle pt-3">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <a href="https://github.com/svalencia014/FSCalculations" class="p-4 text-center border-2 border-red-200 rounded-md w-40" target="_blank">
-        <h3 class="font-bebas-neue text-xl text-emerald-500">Flight Sim Fuel Calculator</h3>
-        <p>A personal project I did for fun in 8th Grade.</p>
-      </a>
       <a href="https://github.com/svalencia014/openscopeCoordinateConverter" class="p-4 text-center border-2 border-red-200 rounded-md w-40" target="_blank">
         <h3 class="font-bebas-neue text-xl text-emerald-500">OpenScope Coord Converter</h3>
         <p>Tool that converts VRC coordinates to the format used by Openscope.</p>
