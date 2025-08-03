@@ -22,18 +22,17 @@ export const load: PageServerLoad = async () => {
 			});
 		}
 
-		// if (projects.lastFetched.getTime() < Date.now() - 1000 * 60 * 60) {
-		// 	// 1 hour
-		// 	//@ts-expect-error - not returning like it wants
-		// 	projects = await getFromGithub(language.name);
-		// 	await prisma.language.update({
-		// 		where: {
-		// 			name: language.name
-		// 		},
-		// 		data: projects
-		// 	});
-		// }
-    projects = await getFromGithub(language.name);
+		if (projects.lastFetched.getTime() < Date.now() - 1000 * 60 * 60) {
+			// 1 hour
+			projects = await getFromGithub(language.name);
+
+			await prisma.language.update({
+				where: {
+					name: language.name
+				},
+				data: projects
+			});
+		}
     
 
 		pageData.languages[i].projectsOwned = projects.projectsOwned;

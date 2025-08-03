@@ -9,7 +9,7 @@
   let { children }: Props = $props();
 </script>
 
-<div class="w-screen h-fit min-w-fit bg-[#4d2c2b]">
+<div class="w-screen h-fit min-h-screen min-w-fit bg-[#4d2c2b]">
   <div>
     <Navbar/>
   </div>
