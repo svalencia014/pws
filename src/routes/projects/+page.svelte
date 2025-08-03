@@ -39,7 +39,7 @@
 </div>
 <hr>
 <div id="skills">
-  <p class="text-center pt-6">Here are some of the languages I've used for public projects.</p>
+  <p class="text-center pt-6">Here are some of the languages I've used for public projects. Clicking on the link will take you to a list of public projects I own in each language.</p>
   <div class="flex justify-center align-middle pt-3">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {#each data.pageData.languages as language}
@@ -51,7 +51,8 @@
         {:else}
           <a href="https://github.com/svalencia014?tab=repositories&language={language.name}" class="p-4 text-center border-2 border-red-200 rounded-md w-40" target="_blank">
             <h1 class="font-bebas-neue text-xl text-emerald-500">{language.name}</h1>
-            <p>{language.projects} {language.projects == 1 ? "public project" : "public projects"}</p>
+            <p>{language.projectsOwned} {language.projectsOwned == 1 ? "public project owned" : "public projects owned"}</p>
+            <p>{language.projectsContributed} {language.projectsContributed == 1 ? "public project contributed to" : "public projects contributed to"}</p>
           </a>
         {/if}
       {/each}

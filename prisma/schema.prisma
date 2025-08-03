@@ -25,7 +25,8 @@ model Submission {
 
 model Language {
   name String @id @unique
-  projects Int @default(0)
+  projectsOwned Int @default(0)
+  projectsContributed Int @default(0)
   lastFetched DateTime @default(now()) @map("last_fetched")
 
   @@map("languages")
