@@ -9,12 +9,12 @@
   let { children }: Props = $props();
 </script>
 
-<div class="w-screen h-fit min-h-screen min-w-fit bg-[#4d2c2b]">
+<div class="flex flex-col w-screen min-h-screen min-w-fit bg-gray-800 h-screen justify-between">
   <div>
     <Navbar/>
   </div>
 
-  <main class="font-stick-no-bills flex-col items-center justify-center text-center pt-3 text-orange-400">
+  <main class="font-stick-no-bills flex-col items-center justify-center text-center pt-3 text-orange-400 h-fit mb-auto">
     {@render children?.()}
   </main>
 
